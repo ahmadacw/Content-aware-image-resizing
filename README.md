@@ -1,7 +1,7 @@
 # Content-aware-image-resizing
 Utilizing dynamic programing in order to resize digital images with minimal loss of quality
 
-We do this by removing "seams" from the image, so if we want to reduce the size by 2 in the x dimension.
+We do this by removing or adding "seams" from the image, so if we want to reduce the size by 2 in the x dimension.
 We find two vertical seams to remove.
 
 The seams can be choosen using different methods, the most basic being straight rows of pixels.
@@ -17,4 +17,7 @@ We utilize this energy function in two methods:-
 2. Minimal loss but also with maximum energy for the produced image, these two parameters need to be balanced,
    Using some trial and error.
 
-For can see the preformance of each method in the results folder.
+To enlarge an image we do the exact same process but instead of removing the seam we add another identicale seam.
+
+See the preformance of each method in the results folder.
+** by seam I mean a path from a side of the image to the opposing side.
